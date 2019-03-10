@@ -1,4 +1,5 @@
 # Calculator App
+---
 <p>Implemented a calculator app using Java/Java Swing<p>
 
 # Functions
@@ -13,6 +14,10 @@
 * Addition
 * Factorial
 * Substraction
- 
-# Sample
+ > Extra content
+ - Ability to lock the calculator so that no buttons can be pressed
+ - NightMode
+# Normal UI
 ![Calculator Java Swing](https://github.com/razvancazacu/calculator-java/blob/master/samplePhoto.png?raw=true "Basic Calculator")
+# NightMode UI
+![Calculator Java Swing NightMode](https://github.com/razvancazacu/calculator-java/blob/master/sampleNightMode.png?raw=true "Basic Calculator NightMode")
