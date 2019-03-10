@@ -1,6 +1,6 @@
 # Calculator App
 ---
-<p>Implemented a calculator app using Java/Java Swing<p>
+<p>Implemented a calculator app using Java/Java Swing to get a basic idea on Swing<p>
 
 # Functions
 * Ln
@@ -23,8 +23,3 @@
 # NightMode UI
 ![Calculator Java Swing NightMode](https://github.com/razvancazacu/calculator-java/blob/master/sampleNightMode.png?raw=true "Basic Calculator NightMode")
 
-# Future upgrades
-- Enable keyboard usage
-- More complex mathematical operations
-- Improved UI/UX
----
