@@ -19,5 +19,12 @@
  - NightMode
 # Normal UI
 ![Calculator Java Swing](https://github.com/razvancazacu/calculator-java/blob/master/samplePhoto.png?raw=true "Basic Calculator")
+---
 # NightMode UI
 ![Calculator Java Swing NightMode](https://github.com/razvancazacu/calculator-java/blob/master/sampleNightMode.png?raw=true "Basic Calculator NightMode")
+
+# Future upgrades
+- Enable keyboard usage
+- More complex mathematical operations
+- Improved UI/UX
+---
