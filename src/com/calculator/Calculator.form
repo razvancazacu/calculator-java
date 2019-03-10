@@ -79,7 +79,7 @@
           <text value="8"/>
         </properties>
       </component>
-      <component id="7a28d" class="javax.swing.JButton" binding="buttonRightPar">
+      <component id="7a28d" class="javax.swing.JButton" binding="buttonCos">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="40"/>
@@ -261,19 +261,6 @@
           <text value="+"/>
         </properties>
       </component>
-      <component id="4751d" class="javax.swing.JButton" binding="buttonXPowY">
-        <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="5" height="40"/>
-            <preferred-size width="0" height="40"/>
-            <maximum-size width="70" height="40"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-5072434"/>
-          <text value="X^Y"/>
-        </properties>
-      </component>
       <component id="88a4d" class="javax.swing.JButton" binding="buttonRad">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
@@ -287,7 +274,7 @@
           <text value=" √ "/>
         </properties>
       </component>
-      <component id="5751a" class="javax.swing.JButton" binding="buttonLog">
+      <component id="5751a" class="javax.swing.JButton" binding="buttonNight">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="40"/>
@@ -297,7 +284,7 @@
         </constraints>
         <properties>
           <background color="-5072434"/>
-          <text value="log"/>
+          <text value="Night"/>
         </properties>
       </component>
       <grid id="d4bf8" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -408,7 +395,7 @@
           <text value="ln"/>
         </properties>
       </component>
-      <component id="e01da" class="javax.swing.JButton" binding="buttonLeftPar">
+      <component id="e01da" class="javax.swing.JButton" binding="buttonSin">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="40"/>
@@ -419,6 +406,19 @@
         <properties>
           <background color="-5072434"/>
           <text value="sin"/>
+        </properties>
+      </component>
+      <component id="4751d" class="javax.swing.JButton" binding="buttonXPowY">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="40"/>
+            <preferred-size width="0" height="40"/>
+            <maximum-size width="70" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5072434"/>
+          <text value="X^Y"/>
         </properties>
       </component>
     </children>
