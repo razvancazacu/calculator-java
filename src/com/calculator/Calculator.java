@@ -413,7 +413,7 @@ public class Calculator {
         frame.setVisible(true);
 
 //        Set the frame icon to an image loaded from a file.
-//      frame.setIconImage(new ImageIcon(imgURL).getImage());
+        frame.setIconImage(new ImageIcon(imgURL ).getImage());
     }
 
     {
