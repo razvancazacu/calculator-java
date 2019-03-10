@@ -1,5 +1,5 @@
 # Calculator App
-<p>Made using Java and Java Swift<p>
+<p>Made using Java and Java Swing<p>
 
 
 
