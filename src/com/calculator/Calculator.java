@@ -34,6 +34,9 @@ public class Calculator {
     private JButton button0;
     private JButton buttonDot;
     private JButton button2;
+    private JRadioButton lockRadioButton;
+    private JRadioButton unlockRadioButton;
+    private JButton buttonDelete;
 
     public Calculator() {
         button0.addActionListener(new ActionListener() {
@@ -102,6 +105,30 @@ public class Calculator {
                 textFieldResult.setText("");
             }
         });
+        buttonMultiply.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textFieldResult.setText(textFieldResult.getText() + "*");
+            }
+        });
+        buttonDivide.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textFieldResult.setText(textFieldResult.getText() + "÷");
+            }
+        });
+        buttonMinus.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textFieldResult.setText(textFieldResult.getText() + "-");
+            }
+        });
+        buttonDot.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textFieldResult.setText(textFieldResult.getText() + ".");
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -138,10 +165,6 @@ public class Calculator {
         calculatorPanel.setEnabled(true);
         calculatorPanel.setMinimumSize(new Dimension(700, 400));
         calculatorPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(new Color(-4473925)), null, TitledBorder.LEFT, TitledBorder.ABOVE_TOP));
-        textFieldResult = new JTextField();
-        textFieldResult.setBackground(new Color(-5072434));
-        textFieldResult.setHorizontalAlignment(4);
-        calculatorPanel.add(textFieldResult, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 5, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(100, 18), null, 0, false));
         button0 = new JButton();
         button0.setBackground(new Color(-5072434));
         button0.setText("0");
@@ -158,10 +181,6 @@ public class Calculator {
         button7.setBackground(new Color(-5072434));
         button7.setText("7");
         calculatorPanel.add(button7, new com.intellij.uiDesigner.core.GridConstraints(2, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
-        buttonLeftPar = new JButton();
-        buttonLeftPar.setBackground(new Color(-5072434));
-        buttonLeftPar.setText("(");
-        calculatorPanel.add(buttonLeftPar, new com.intellij.uiDesigner.core.GridConstraints(1, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
         button8 = new JButton();
         button8.setBackground(new Color(-5072434));
         button8.setText("8");
@@ -234,14 +253,51 @@ public class Calculator {
         buttonLog.setBackground(new Color(-5072434));
         buttonLog.setText("log");
         calculatorPanel.add(buttonLog, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
-        buttonLn = new JButton();
-        buttonLn.setBackground(new Color(-5072434));
-        buttonLn.setText("ln");
-        calculatorPanel.add(buttonLn, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
+        final JPanel panel1 = new JPanel();
+        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(9, 4, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.setBackground(new Color(-11895893));
+        panel1.setForeground(new Color(-5072434));
+        calculatorPanel.add(panel1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 5, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
+        textFieldResult = new JTextField();
+        textFieldResult.setBackground(new Color(-5072434));
+        textFieldResult.setHorizontalAlignment(4);
+        panel1.add(textFieldResult, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 8, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(100, 50), null, 0, false));
+        lockRadioButton = new JRadioButton();
+        lockRadioButton.setBackground(new Color(-11895893));
+        lockRadioButton.setHorizontalAlignment(10);
+        lockRadioButton.setHorizontalTextPosition(11);
+        lockRadioButton.setSelected(false);
+        lockRadioButton.setText("Lock");
+        panel1.add(lockRadioButton, new com.intellij.uiDesigner.core.GridConstraints(7, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        unlockRadioButton = new JRadioButton();
+        unlockRadioButton.setBackground(new Color(-11895893));
+        unlockRadioButton.setSelected(true);
+        unlockRadioButton.setText("Unlock");
+        unlockRadioButton.setVerticalAlignment(0);
+        unlockRadioButton.setVerticalTextPosition(0);
+        panel1.add(unlockRadioButton, new com.intellij.uiDesigner.core.GridConstraints(8, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        final com.intellij.uiDesigner.core.Spacer spacer1 = new com.intellij.uiDesigner.core.Spacer();
+        panel1.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(6, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        final com.intellij.uiDesigner.core.Spacer spacer2 = new com.intellij.uiDesigner.core.Spacer();
+        panel1.add(spacer2, new com.intellij.uiDesigner.core.GridConstraints(2, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        final com.intellij.uiDesigner.core.Spacer spacer3 = new com.intellij.uiDesigner.core.Spacer();
+        panel1.add(spacer3, new com.intellij.uiDesigner.core.GridConstraints(0, 3, 2, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        buttonDelete = new JButton();
+        buttonDelete.setBackground(new Color(-5072434));
+        buttonDelete.setText("Delete");
+        panel1.add(buttonDelete, new com.intellij.uiDesigner.core.GridConstraints(3, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 3, false));
         buttonFactorial = new JButton();
         buttonFactorial.setBackground(new Color(-5072434));
         buttonFactorial.setText("x!");
         calculatorPanel.add(buttonFactorial, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
+        buttonLn = new JButton();
+        buttonLn.setBackground(new Color(-5072434));
+        buttonLn.setText("ln");
+        calculatorPanel.add(buttonLn, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
+        buttonLeftPar = new JButton();
+        buttonLeftPar.setBackground(new Color(-5072434));
+        buttonLeftPar.setText("(");
+        calculatorPanel.add(buttonLeftPar, new com.intellij.uiDesigner.core.GridConstraints(1, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
     }
 
     /**
