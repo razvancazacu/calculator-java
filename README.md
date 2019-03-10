@@ -16,7 +16,7 @@
 * Substraction
  > Extra content
  - Ability to lock the calculator so that no buttons can be pressed
- - NightMode
+ - NightMode as a small joke for programmers
 # Normal UI
 ![Calculator Java Swing](https://github.com/razvancazacu/calculator-java/blob/master/samplePhoto.png?raw=true "Basic Calculator")
 ---
