@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a6e5b75-3248-4037-b5c0-e5a1735ecd8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/calculator/Calculator.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculator/Calculator.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculator/Calculator.java" afterDir="false" />
     </list>
@@ -45,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+            <state relative-caret-position="436">
+              <caret line="309" column="62" selection-start-line="309" selection-start-column="62" selection-end-line="309" selection-end-column="62" />
               <folding>
                 <element signature="e#1395#1396#0" expanded="true" />
                 <element signature="e#1483#1484#0" expanded="true" />
@@ -71,18 +54,19 @@
                 <element signature="e#3371#3372#0" expanded="true" />
                 <element signature="e#3519#3520#0" expanded="true" />
                 <element signature="e#3607#3608#0" expanded="true" />
-                <element signature="e#3759#3760#0" expanded="true" />
-                <element signature="e#3818#3819#0" expanded="true" />
-                <element signature="e#4692#4693#0" expanded="true" />
-                <element signature="e#4780#4781#0" expanded="true" />
-                <element signature="initializer##0;class#Calculator#0" />
-                <element signature="e#32782#32783#0" expanded="true" />
+                <element signature="e#5368#5369#0" expanded="true" />
+                <element signature="initializer##0;class#Calculator#0" expanded="true" />
+                <element signature="docComment;method#$$$getFont$$$#0;class#Calculator#0" />
+                <element signature="method#$$$getFont$$$#0;class#Calculator#0" />
+                <element signature="docComment;method#$$$getRootComponent$$$#0;class#Calculator#0" />
+                <element signature="e#28322#28361#1" />
+                <element signature="e#36412#36413#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -95,6 +79,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>swit</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,8 +109,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="924" />
-    <option name="y" value="47" />
+    <option name="x" value="658" />
+    <option name="y" value="98" />
     <option name="width" value="1426" />
     <option name="height" value="982" />
   </component>
@@ -162,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552220438019" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552222889695" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
@@ -228,17 +217,18 @@
       <updated>1552161660922</updated>
       <workItem from="1552161667444" duration="7436000" />
       <workItem from="1552213159230" duration="173000" />
-      <workItem from="1552213425398" duration="6011000" />
+      <workItem from="1552213425398" duration="8380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13788000" />
+    <option name="totallyTimeSpent" value="16157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="699" y="57" width="1426" height="982" extended-state="0" />
+    <frame x="658" y="98" width="1426" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18443497" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18374817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -249,7 +239,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34864548" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -258,7 +248,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.34890965" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32979977" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -337,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+        <state relative-caret-position="436">
+          <caret line="309" column="62" selection-start-line="309" selection-start-column="62" selection-end-line="309" selection-end-column="62" />
           <folding>
             <element signature="e#1395#1396#0" expanded="true" />
             <element signature="e#1483#1484#0" expanded="true" />
@@ -360,12 +350,13 @@
             <element signature="e#3371#3372#0" expanded="true" />
             <element signature="e#3519#3520#0" expanded="true" />
             <element signature="e#3607#3608#0" expanded="true" />
-            <element signature="e#3759#3760#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#4692#4693#0" expanded="true" />
-            <element signature="e#4780#4781#0" expanded="true" />
-            <element signature="initializer##0;class#Calculator#0" />
-            <element signature="e#32782#32783#0" expanded="true" />
+            <element signature="e#5368#5369#0" expanded="true" />
+            <element signature="initializer##0;class#Calculator#0" expanded="true" />
+            <element signature="docComment;method#$$$getFont$$$#0;class#Calculator#0" />
+            <element signature="method#$$$getFont$$$#0;class#Calculator#0" />
+            <element signature="docComment;method#$$$getRootComponent$$$#0;class#Calculator#0" />
+            <element signature="e#28322#28361#1" />
+            <element signature="e#36412#36413#0" expanded="true" />
           </folding>
         </state>
       </provider>

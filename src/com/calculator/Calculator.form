@@ -89,7 +89,7 @@
         </constraints>
         <properties>
           <background color="-5072434"/>
-          <text value=")"/>
+          <text value="cos"/>
         </properties>
       </component>
       <component id="40036" class="javax.swing.JButton" binding="button5">
@@ -319,6 +319,7 @@
             </constraints>
             <properties>
               <background color="-5072434"/>
+              <font size="24"/>
               <horizontalAlignment value="4"/>
             </properties>
           </component>
@@ -417,7 +418,7 @@
         </constraints>
         <properties>
           <background color="-5072434"/>
-          <text value="("/>
+          <text value="sin"/>
         </properties>
       </component>
     </children>

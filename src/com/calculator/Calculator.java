@@ -107,6 +107,7 @@ public class Calculator {
             @Override
             public void actionPerformed(ActionEvent e) {
                 textFieldResult.setText("");
+                label1.setText("");
             }
         });
         buttonMultiply.addActionListener(new ActionListener() {
@@ -130,10 +131,14 @@ public class Calculator {
         buttonMinus.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                numb = Double.parseDouble(textFieldResult.getText());
-                calculation = 2;
-                textFieldResult.setText("");
-                label1.setText(numb + "-");
+                if (textFieldResult.getText().length() > 0) {
+                    numb = Double.parseDouble(textFieldResult.getText());
+                    calculation = 2;
+                    textFieldResult.setText("");
+                    label1.setText(numb + "-");
+                } else {
+                    textFieldResult.setText("-");
+                }
             }
         });
         buttonDot.addActionListener(new ActionListener() {
@@ -220,28 +225,93 @@ public class Calculator {
             public void actionPerformed(ActionEvent e) {
                 arithmeticOperation();
                 label1.setText("");
+                calculation = 0;
+            }
+        });
+        buttonFactorial.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                calculation = 5;
+                arithmeticOperation();
+            }
+        });
+        buttonLn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                calculation = 6;
+                arithmeticOperation();
+            }
+        });
+        buttonRad.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                calculation = 7;
+                arithmeticOperation();
+            }
+        });
+        buttonXPowY.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                numb = Double.parseDouble(textFieldResult.getText());
+                calculation = 8;
+                textFieldResult.setText("");
+                label1.setText(numb + "^");
+            }
+        });
+        buttonProc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                numb = Double.parseDouble(textFieldResult.getText());
+                calculation = 9;
+                textFieldResult.setText("");
+                label1.setText(numb + "%");
             }
         });
     }
 
     public void arithmeticOperation() {
         switch (calculation) {
-            case 1:
+            case 0: // No operation
+                JOptionPane.showMessageDialog(null, "Please select an operation");
+                break;
+            case 1: // Addition
                 answ = numb + Double.parseDouble(textFieldResult.getText());
                 textFieldResult.setText(Double.toString(answ));
                 break;
-            case 2:
+            case 2: // Sub
                 answ = numb - Double.parseDouble(textFieldResult.getText());
                 textFieldResult.setText(Double.toString(answ));
                 break;
-            case 3:
+            case 3: //  Multiply
                 answ = numb * Double.parseDouble(textFieldResult.getText());
                 textFieldResult.setText(Double.toString(answ));
                 break;
-            case 4:
+            case 4: //  Divide
                 answ = numb / Double.parseDouble(textFieldResult.getText());
                 textFieldResult.setText(Double.toString(answ));
                 break;
+            case 5: //  Factorial
+                answ = 1;
+                for (int i = 1; i <= Double.parseDouble(textFieldResult.getText()); i++) {
+                    answ *= i;
+                }
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 6: //  Natural Log
+                answ = Math.log(Double.parseDouble(textFieldResult.getText()));
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 7: // Radical
+                answ = Math.sqrt(Double.parseDouble(textFieldResult.getText()));
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 8: // Pow
+                answ = Math.pow(numb, Double.parseDouble(textFieldResult.getText()));
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 9: // Proc
+                answ = (numb * 100) / Double.parseDouble(textFieldResult.getText());
+                textFieldResult.setText(Double.toString(answ));
         }
     }
 
@@ -349,7 +419,7 @@ public class Calculator {
         calculatorPanel.add(button8, new com.intellij.uiDesigner.core.GridConstraints(2, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
         buttonRightPar = new JButton();
         buttonRightPar.setBackground(new Color(-5072434));
-        buttonRightPar.setText(")");
+        buttonRightPar.setText("cos");
         calculatorPanel.add(buttonRightPar, new com.intellij.uiDesigner.core.GridConstraints(1, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
         button5 = new JButton();
         button5.setBackground(new Color(-5072434));
@@ -422,6 +492,8 @@ public class Calculator {
         calculatorPanel.add(panel1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 5, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         textFieldResult = new JTextField();
         textFieldResult.setBackground(new Color(-5072434));
+        Font textFieldResultFont = this.$$$getFont$$$(null, -1, 24, textFieldResult.getFont());
+        if (textFieldResultFont != null) textFieldResult.setFont(textFieldResultFont);
         textFieldResult.setHorizontalAlignment(4);
         panel1.add(textFieldResult, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 9, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(100, 50), null, 0, false));
         lockRadioButton = new JRadioButton();
@@ -462,8 +534,27 @@ public class Calculator {
         calculatorPanel.add(buttonLn, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
         buttonLeftPar = new JButton();
         buttonLeftPar.setBackground(new Color(-5072434));
-        buttonLeftPar.setText("(");
+        buttonLeftPar.setText("sin");
         calculatorPanel.add(buttonLeftPar, new com.intellij.uiDesigner.core.GridConstraints(1, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
+    }
+
+    /**
+     * @noinspection ALL
+     */
+    private Font $$$getFont$$$(String fontName, int style, int size, Font currentFont) {
+        if (currentFont == null) return null;
+        String resultName;
+        if (fontName == null) {
+            resultName = currentFont.getName();
+        } else {
+            Font testFont = new Font(fontName, Font.PLAIN, 10);
+            if (testFont.canDisplay('a') && testFont.canDisplay('1')) {
+                resultName = fontName;
+            } else {
+                resultName = currentFont.getName();
+            }
+        }
+        return new Font(resultName, style >= 0 ? style : currentFont.getStyle(), size >= 0 ? size : currentFont.getSize());
     }
 
     /**
