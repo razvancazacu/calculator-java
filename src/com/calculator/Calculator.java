@@ -37,6 +37,10 @@ public class Calculator {
     private JRadioButton lockRadioButton;
     private JRadioButton unlockRadioButton;
     private JButton buttonDelete;
+    private JLabel label1;
+
+    double numb, answ;
+    int calculation;
 
     public Calculator() {
         button0.addActionListener(new ActionListener() {
@@ -108,19 +112,28 @@ public class Calculator {
         buttonMultiply.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textFieldResult.setText(textFieldResult.getText() + "*");
+                numb = Double.parseDouble(textFieldResult.getText());
+                calculation = 3;
+                textFieldResult.setText("");
+                label1.setText(numb + "*");
             }
         });
         buttonDivide.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textFieldResult.setText(textFieldResult.getText() + "÷");
+                numb = Double.parseDouble(textFieldResult.getText());
+                calculation = 4;
+                textFieldResult.setText("");
+                label1.setText(numb + "÷");
             }
         });
         buttonMinus.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textFieldResult.setText(textFieldResult.getText() + "-");
+                numb = Double.parseDouble(textFieldResult.getText());
+                calculation = 2;
+                textFieldResult.setText("");
+                label1.setText(numb + "-");
             }
         });
         buttonDot.addActionListener(new ActionListener() {
@@ -129,6 +142,155 @@ public class Calculator {
                 textFieldResult.setText(textFieldResult.getText() + ".");
             }
         });
+        /**
+         * Making the radio buttons so that only one can be active.
+         * If radio button "LOCK" is selected
+         * Buttons cannot be pressed
+         */
+        lockRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (unlockRadioButton.isSelected()) {
+                    unlockRadioButton.setSelected(false);
+                }
+                lockRadioButton.setSelected(true);
+
+                //Disable interactions with calculator
+                disable();
+            }
+        });
+        unlockRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (lockRadioButton.isSelected()) {
+                    lockRadioButton.setSelected(false);
+                }
+                unlockRadioButton.setSelected(true);
+
+                //Enable interactions with calculator
+                enable();
+            }
+        });
+        buttonLeftPar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textFieldResult.setText(textFieldResult.getText() + "(");
+
+            }
+        });
+        buttonRightPar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textFieldResult.setText(textFieldResult.getText() + ")");
+
+            }
+        });
+        buttonDelete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                int length = textFieldResult.getText().length();
+                int number = textFieldResult.getText().length() - 1;
+                String store;
+                /**
+                 * Creating empty string builder for storing strings.
+                 * In this case storing in object "back" the text in "textFieldResult"
+                 */
+                if (length > 0) {
+                    StringBuilder back = new StringBuilder(textFieldResult.getText());
+                    back.deleteCharAt(number);
+                    store = back.toString();
+                    textFieldResult.setText(store);
+                }
+            }
+        });
+        buttonPlus.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                numb = Double.parseDouble(textFieldResult.getText());
+                calculation = 1;
+                textFieldResult.setText("");
+                label1.setText(numb + "+");
+            }
+        });
+        unlockRadioButton.setEnabled(false);
+
+        buttonEqual.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                arithmeticOperation();
+                label1.setText("");
+            }
+        });
+    }
+
+    public void arithmeticOperation() {
+        switch (calculation) {
+            case 1:
+                answ = numb + Double.parseDouble(textFieldResult.getText());
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 2:
+                answ = numb - Double.parseDouble(textFieldResult.getText());
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 3:
+                answ = numb * Double.parseDouble(textFieldResult.getText());
+                textFieldResult.setText(Double.toString(answ));
+                break;
+            case 4:
+                answ = numb / Double.parseDouble(textFieldResult.getText());
+                textFieldResult.setText(Double.toString(answ));
+                break;
+        }
+    }
+
+    public void disable() {
+        /**
+         * Wanted to disable every button at a time,
+         * but disabling every component by
+         * main panel "getComponents()" it's faster and cleaner
+         */
+//        button0.setEnabled(false);
+//        button1.setEnabled(false);
+//        button2.setEnabled(false);
+//        button3.setEnabled(false);
+//        button4.setEnabled(false);
+//        button5.setEnabled(false);
+//        button6.setEnabled(false);
+//        button7.setEnabled(false);
+//        button8.setEnabled(false);
+//        button9.setEnabled(false);
+
+        Component[] component = calculatorPanel.getComponents();
+        for (int i = 0; i < component.length; i++) {
+            if (component[i] instanceof JButton) {
+                JButton button = (JButton) component[i];
+                button.setEnabled(false);
+            }
+        }
+
+        //  Additional buttons from the second panel
+        buttonDelete.setEnabled(false);
+        lockRadioButton.setEnabled(false);
+        unlockRadioButton.setEnabled(true);
+        textFieldResult.setEnabled(false);
+    }
+
+    public void enable() {
+        Component[] component = calculatorPanel.getComponents();
+        for (int i = 0; i < component.length; i++) {
+            if (component[i] instanceof JButton) {
+                JButton button = (JButton) component[i];
+                button.setEnabled(true);
+            }
+        }
+
+        //  Additional buttons from the second panel
+        buttonDelete.setEnabled(true);
+        lockRadioButton.setEnabled(true);
+        unlockRadioButton.setEnabled(false);
+        textFieldResult.setEnabled(true);
     }
 
     public static void main(String[] args) {
@@ -254,38 +416,42 @@ public class Calculator {
         buttonLog.setText("log");
         calculatorPanel.add(buttonLog, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(5, 40), new Dimension(0, 40), new Dimension(70, 40), 0, false));
         final JPanel panel1 = new JPanel();
-        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(9, 4, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(10, 4, new Insets(0, 0, 0, 0), -1, -1));
         panel1.setBackground(new Color(-11895893));
         panel1.setForeground(new Color(-5072434));
         calculatorPanel.add(panel1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 5, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         textFieldResult = new JTextField();
         textFieldResult.setBackground(new Color(-5072434));
         textFieldResult.setHorizontalAlignment(4);
-        panel1.add(textFieldResult, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 8, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(100, 50), null, 0, false));
+        panel1.add(textFieldResult, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 9, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(100, 50), null, 0, false));
         lockRadioButton = new JRadioButton();
         lockRadioButton.setBackground(new Color(-11895893));
         lockRadioButton.setHorizontalAlignment(10);
         lockRadioButton.setHorizontalTextPosition(11);
         lockRadioButton.setSelected(false);
         lockRadioButton.setText("Lock");
-        panel1.add(lockRadioButton, new com.intellij.uiDesigner.core.GridConstraints(7, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel1.add(lockRadioButton, new com.intellij.uiDesigner.core.GridConstraints(8, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         unlockRadioButton = new JRadioButton();
         unlockRadioButton.setBackground(new Color(-11895893));
+        unlockRadioButton.setEnabled(false);
         unlockRadioButton.setSelected(true);
         unlockRadioButton.setText("Unlock");
         unlockRadioButton.setVerticalAlignment(0);
         unlockRadioButton.setVerticalTextPosition(0);
-        panel1.add(unlockRadioButton, new com.intellij.uiDesigner.core.GridConstraints(8, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel1.add(unlockRadioButton, new com.intellij.uiDesigner.core.GridConstraints(9, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer1 = new com.intellij.uiDesigner.core.Spacer();
-        panel1.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(6, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        panel1.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(7, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer2 = new com.intellij.uiDesigner.core.Spacer();
-        panel1.add(spacer2, new com.intellij.uiDesigner.core.GridConstraints(2, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        panel1.add(spacer2, new com.intellij.uiDesigner.core.GridConstraints(3, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer3 = new com.intellij.uiDesigner.core.Spacer();
-        panel1.add(spacer3, new com.intellij.uiDesigner.core.GridConstraints(0, 3, 2, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        panel1.add(spacer3, new com.intellij.uiDesigner.core.GridConstraints(0, 3, 3, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         buttonDelete = new JButton();
         buttonDelete.setBackground(new Color(-5072434));
         buttonDelete.setText("Delete");
-        panel1.add(buttonDelete, new com.intellij.uiDesigner.core.GridConstraints(3, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 3, false));
+        panel1.add(buttonDelete, new com.intellij.uiDesigner.core.GridConstraints(4, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 3, false));
+        label1 = new JLabel();
+        label1.setText("");
+        panel1.add(label1, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_EAST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         buttonFactorial = new JButton();
         buttonFactorial.setBackground(new Color(-5072434));
         buttonFactorial.setText("x!");

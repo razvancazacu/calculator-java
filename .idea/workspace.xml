@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a6e5b75-3248-4037-b5c0-e5a1735ecd8b" name="Default Changelist" comment="" />
+    <list default="true" id="5a6e5b75-3248-4037-b5c0-e5a1735ecd8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculator/com/calculator/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/calculator/Calculator.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculator/Calculator.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculator/Calculator.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,41 +48,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="128" column="73" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
+            <state relative-caret-position="467">
+              <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
               <folding>
-                <element signature="e#1230#1231#0" expanded="true" />
-                <element signature="e#1318#1319#0" expanded="true" />
-                <element signature="e#1466#1467#0" expanded="true" />
-                <element signature="e#1554#1555#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
-                <element signature="e#1790#1791#0" expanded="true" />
-                <element signature="e#1938#1939#0" expanded="true" />
-                <element signature="e#2026#2027#0" expanded="true" />
-                <element signature="e#2174#2175#0" expanded="true" />
-                <element signature="e#2262#2263#0" expanded="true" />
-                <element signature="e#2410#2411#0" expanded="true" />
-                <element signature="e#2498#2499#0" expanded="true" />
-                <element signature="e#2646#2647#0" expanded="true" />
-                <element signature="e#2734#2735#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2970#2971#0" expanded="true" />
-                <element signature="e#3118#3119#0" expanded="true" />
-                <element signature="e#3206#3207#0" expanded="true" />
-                <element signature="e#3354#3355#0" expanded="true" />
-                <element signature="e#3442#3443#0" expanded="true" />
-                <element signature="e#3594#3595#0" expanded="true" />
-                <element signature="e#3640#3641#0" expanded="true" />
-                <element signature="e#3808#3809#0" expanded="true" />
-                <element signature="e#3865#3866#0" expanded="true" />
-                <element signature="e#4049#4050#0" expanded="true" />
-                <element signature="e#4137#4138#0" expanded="true" />
-                <element signature="e#4289#4290#0" expanded="true" />
-                <element signature="e#4377#4378#0" expanded="true" />
-                <element signature="e#4527#4528#0" expanded="true" />
-                <element signature="e#4615#4616#0" expanded="true" />
-                <element signature="e#19149#19150#0" expanded="true" />
-                <element signature="e#19187#19188#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1631#1632#0" expanded="true" />
+                <element signature="e#1719#1720#0" expanded="true" />
+                <element signature="e#1867#1868#0" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#2103#2104#0" expanded="true" />
+                <element signature="e#2191#2192#0" expanded="true" />
+                <element signature="e#2339#2340#0" expanded="true" />
+                <element signature="e#2427#2428#0" expanded="true" />
+                <element signature="e#2575#2576#0" expanded="true" />
+                <element signature="e#2663#2664#0" expanded="true" />
+                <element signature="e#2811#2812#0" expanded="true" />
+                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="e#3047#3048#0" expanded="true" />
+                <element signature="e#3135#3136#0" expanded="true" />
+                <element signature="e#3283#3284#0" expanded="true" />
+                <element signature="e#3371#3372#0" expanded="true" />
+                <element signature="e#3519#3520#0" expanded="true" />
+                <element signature="e#3607#3608#0" expanded="true" />
+                <element signature="e#3759#3760#0" expanded="true" />
+                <element signature="e#3818#3819#0" expanded="true" />
+                <element signature="e#4692#4693#0" expanded="true" />
+                <element signature="e#4780#4781#0" expanded="true" />
+                <element signature="initializer##0;class#Calculator#0" />
+                <element signature="e#32782#32783#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +108,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/calculator/CalculatorMain.java" />
-        <option value="$PROJECT_DIR$/src/com/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/com/calculator/Calculator.form" />
+        <option value="$PROJECT_DIR$/src/com/calculator/Calculator.java" />
       </list>
     </option>
   </component>
@@ -105,9 +119,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="731" />
-    <option name="y" value="58" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="924" />
+    <option name="y" value="47" />
     <option name="width" value="1426" />
     <option name="height" value="982" />
   </component>
@@ -148,9 +162,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552217290681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552220438019" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -214,27 +228,27 @@
       <updated>1552161660922</updated>
       <workItem from="1552161667444" duration="7436000" />
       <workItem from="1552213159230" duration="173000" />
-      <workItem from="1552213425398" duration="3020000" />
+      <workItem from="1552213425398" duration="6011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10797000" />
+    <option name="totallyTimeSpent" value="13788000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="699" y="57" width="1426" height="982" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicate detector" weight="0.32979977" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.34890965" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34864548" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -255,6 +269,37 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34890965" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.34890965" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32979977" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -287,49 +332,43 @@
         <state paletteWidth="0" propertiesWidth="0" structureHeight="0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="128" column="73" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
+        <state relative-caret-position="467">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
           <folding>
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-            <element signature="e#2262#2263#0" expanded="true" />
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2498#2499#0" expanded="true" />
-            <element signature="e#2646#2647#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3206#3207#0" expanded="true" />
-            <element signature="e#3354#3355#0" expanded="true" />
-            <element signature="e#3442#3443#0" expanded="true" />
-            <element signature="e#3594#3595#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
-            <element signature="e#3808#3809#0" expanded="true" />
-            <element signature="e#3865#3866#0" expanded="true" />
-            <element signature="e#4049#4050#0" expanded="true" />
-            <element signature="e#4137#4138#0" expanded="true" />
-            <element signature="e#4289#4290#0" expanded="true" />
-            <element signature="e#4377#4378#0" expanded="true" />
-            <element signature="e#4527#4528#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#19149#19150#0" expanded="true" />
-            <element signature="e#19187#19188#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#2103#2104#0" expanded="true" />
+            <element signature="e#2191#2192#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2427#2428#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
+            <element signature="e#2811#2812#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#3047#3048#0" expanded="true" />
+            <element signature="e#3135#3136#0" expanded="true" />
+            <element signature="e#3283#3284#0" expanded="true" />
+            <element signature="e#3371#3372#0" expanded="true" />
+            <element signature="e#3519#3520#0" expanded="true" />
+            <element signature="e#3607#3608#0" expanded="true" />
+            <element signature="e#3759#3760#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#4692#4693#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
+            <element signature="initializer##0;class#Calculator#0" />
+            <element signature="e#32782#32783#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
 </project>
