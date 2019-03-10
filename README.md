@@ -1,12 +1,18 @@
 # Calculator App
-<p>Made using Java and Java Swing<p>
+<p>Implemented a calculator app using Java/Java Swing<p>
 
-
-
-
-
-
-
-
-# Used
-<p> JetBrains Intelliji IDE <p>
+# Functions
+* Ln
+* X^Y
+* Sin
+* Cos
+* Divide
+* Radical
+* Procent
+* Multiply
+* Addition
+* Factorial
+* Substraction
+ 
+# Sample
+![Calculator Java Swing](https://github.com/razvancazacu/calculator-java/blob/master/samplePhoto.png?raw=true "Basic Calculator")
