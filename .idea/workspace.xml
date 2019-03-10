@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a6e5b75-3248-4037-b5c0-e5a1735ecd8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculator/Calculator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,45 +27,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2248">
-              <caret line="405" column="44" lean-forward="true" selection-start-line="405" selection-start-column="44" selection-end-line="405" selection-end-column="44" />
+            <state relative-caret-position="573">
+              <caret line="412" column="31" selection-start-line="412" selection-start-column="31" selection-end-line="412" selection-end-column="31" />
               <folding>
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1651#1652#0" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1975#1976#0" expanded="true" />
-                <element signature="e#2123#2124#0" expanded="true" />
-                <element signature="e#2211#2212#0" expanded="true" />
-                <element signature="e#2359#2360#0" expanded="true" />
-                <element signature="e#2447#2448#0" expanded="true" />
-                <element signature="e#2595#2596#0" expanded="true" />
-                <element signature="e#2683#2684#0" expanded="true" />
-                <element signature="e#2831#2832#0" expanded="true" />
-                <element signature="e#2919#2920#0" expanded="true" />
-                <element signature="e#3067#3068#0" expanded="true" />
-                <element signature="e#3155#3156#0" expanded="true" />
-                <element signature="e#3303#3304#0" expanded="true" />
-                <element signature="e#3391#3392#0" expanded="true" />
-                <element signature="e#3539#3540#0" expanded="true" />
-                <element signature="e#3627#3628#0" expanded="true" />
+                <element signature="e#5305#5306#0" expanded="true" />
                 <element signature="e#5393#5394#0" expanded="true" />
-                <element signature="initializer##0;class#Calculator#0" expanded="true" />
-                <element signature="docComment;method#$$$getFont$$$#0;class#Calculator#0" />
-                <element signature="method#$$$getFont$$$#0;class#Calculator#0" />
-                <element signature="docComment;method#$$$getRootComponent$$$#0;class#Calculator#0" />
-                <element signature="e#28322#28361#1" />
+                <element signature="e#37679#37715#0" />
+                <element signature="e#37679#38376#0" />
+                <element signature="e#38382#38418#0" />
+                <element signature="e#38466#38467#0" expanded="true" />
                 <element signature="e#38504#38505#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -124,6 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +127,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,24 +199,23 @@
       <workItem from="1552161667444" duration="7436000" />
       <workItem from="1552213159230" duration="173000" />
       <workItem from="1552213425398" duration="10496000" />
+      <workItem from="1552225492885" duration="156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18273000" />
+    <option name="totallyTimeSpent" value="18429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="362" y="20" width="1426" height="982" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18374817" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18667643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" weight="0.32979977" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.34864548" />
@@ -250,7 +228,8 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.34890965" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286219" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32979977" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -316,52 +295,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/Calculator.iml" />
-    <entry file="file://$PROJECT_DIR$/src/com/calculator/CalculatorMain.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/calculator/CalculatorMain.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state paletteWidth="0" propertiesWidth="0" structureHeight="0" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/calculator/CalculatorMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/calculator/CalculatorMain.jfd" />
+    <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2248">
-          <caret line="405" column="44" lean-forward="true" selection-start-line="405" selection-start-column="44" selection-end-line="405" selection-end-column="44" />
+        <state relative-caret-position="573">
+          <caret line="412" column="31" selection-start-line="412" selection-start-column="31" selection-end-line="412" selection-end-column="31" />
           <folding>
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1651#1652#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1975#1976#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-            <element signature="e#2211#2212#0" expanded="true" />
-            <element signature="e#2359#2360#0" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2595#2596#0" expanded="true" />
-            <element signature="e#2683#2684#0" expanded="true" />
-            <element signature="e#2831#2832#0" expanded="true" />
-            <element signature="e#2919#2920#0" expanded="true" />
-            <element signature="e#3067#3068#0" expanded="true" />
-            <element signature="e#3155#3156#0" expanded="true" />
-            <element signature="e#3303#3304#0" expanded="true" />
-            <element signature="e#3391#3392#0" expanded="true" />
-            <element signature="e#3539#3540#0" expanded="true" />
-            <element signature="e#3627#3628#0" expanded="true" />
+            <element signature="e#5305#5306#0" expanded="true" />
             <element signature="e#5393#5394#0" expanded="true" />
-            <element signature="initializer##0;class#Calculator#0" expanded="true" />
-            <element signature="docComment;method#$$$getFont$$$#0;class#Calculator#0" />
-            <element signature="method#$$$getFont$$$#0;class#Calculator#0" />
-            <element signature="docComment;method#$$$getRootComponent$$$#0;class#Calculator#0" />
-            <element signature="e#28322#28361#1" />
+            <element signature="e#37679#37715#0" />
+            <element signature="e#37679#38376#0" />
+            <element signature="e#38382#38418#0" />
+            <element signature="e#38466#38467#0" expanded="true" />
             <element signature="e#38504#38505#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/calculator/Calculator.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
 </project>

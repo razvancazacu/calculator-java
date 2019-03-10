@@ -411,9 +411,6 @@ public class Calculator {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setBounds(750, 450, 700, 400);
         frame.setVisible(true);
-
-//        Set the frame icon to an image loaded from a file.
-        frame.setIconImage(new ImageIcon(imgURL ).getImage());
     }
 
     {
